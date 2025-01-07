@@ -1,0 +1,70 @@
+A JavaScript function is a block of code designed to perform a particular task.
+
+A JavaScript function is executed when "something" invokes it (calls it).
+
+
+JavaScript Function Syntax
+A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+
+Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
+
+The parentheses may include parameter names separated by commas:
+(parameter1, parameter2, ...)
+
+The code to be executed, by the function, is placed inside curly brackets: {}   
+function name(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
+Function parameters are listed inside the parentheses () in the function definition.
+
+Function arguments are the values received by the function when it is invoked.
+
+Inside the function, the arguments (the parameters) behave as local variables.
+
+Function Invocation
+The code inside the function will execute when "something" invokes (calls) the function:
+
+When an event occurs (when a user clicks a button)
+When it is invoked (called) from JavaScript code
+Automatically (self invoked)
+You will learn a lot more about function invocation later in this tutorial.
+
+
+Function Return
+When JavaScript reaches a return statement, the function will stop executing.
+
+If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.
+
+Functions often compute a return value. The return value is "returned" back to the "caller":
+
+
+
+Function Expression:
+Functions can also be defined as expressions. These can be anonymous and can be stored in variables.
+
+javascript
+const greet = function(name) {
+    console.log("Hello, " + name + "!");
+};
+
+
+Arrow functions in JavaScript, introduced in ES6, offer a more concise syntax for writing functions. They are particularly useful for creating small, simple functions without the need for the function keyword. Here's a rundown of how they work and some of their unique characteristics:
+
+Basic Syntax
+Arrow functions use the => syntax. Here's how you can create a simple arrow function:
+
+javascript
+// Traditional function expression
+const add = function(a, b) {
+    return a + b;
+};
+
+// Arrow function
+const add = (a, b) => {
+    return a + b;
+};
+
+// Even more concise when the function body is a single expression
+const add = (a, b) =>{
+    console.log(a+b)
+}

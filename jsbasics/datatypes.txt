@@ -1,0 +1,243 @@
+JavaScript (JS) is a powerful and versatile programming language used widely for web development. Here are some key features of JavaScript:
+
+1. Dynamic Typing
+JavaScript is dynamically typed, meaning you don't need to specify variable types. Variables can change types at runtime.
+
+2. Object-Oriented
+JavaScript supports object-oriented programming, allowing you to create and manipulate objects.
+
+3. First-Class Functions
+Functions in JavaScript are first-class citizens. They can be assigned to variables, passed as arguments, and returned from other functions.
+
+4. Event-Driven
+JavaScript excels in handling events, making it ideal for creating interactive web pages. Events like clicks, mouse movements, and keypresses can be captured and handled.
+
+5. Asynchronous Programming
+JavaScript supports asynchronous programming, primarily through callbacks, promises, and async/await, enabling efficient handling of operations like data fetching.
+
+6. Closures
+Closures allow a function to access variables from an enclosing scope even after that scope has finished executing.
+
+7. Prototype-Based Inheritance
+Instead of classical inheritance, JavaScript uses prototype-based inheritance. Objects can inherit properties and methods from other objects.
+
+8. Interpreted Language
+JavaScript code is executed line-by-line, and it's interpreted by the browser's JavaScript engine at runtime.
+
+9. Cross-Platform
+JavaScript runs on any platform that has a JavaScript engine, making it highly portable.
+
+10. Browser and Server-Side Scripting
+Originally developed for the browser, JavaScript can now also be used on the server-side with environments like Node.js.
+
+11. Rich Standard Library
+JavaScript has a robust standard library that provides many useful functions and utilities.
+
+12. Modularity
+JavaScript supports modules, allowing you to split your code into reusable and maintainable chunks.
+
+13. DOM Manipulation
+JavaScript can manipulate the Document Object Model (DOM) to dynamically update and change the content of web pages.
+
+14. Community and Ecosystem
+JavaScript has a vast ecosystem of libraries and frameworks (like React, Angular, and Vue) and a strong community.
+
+
+
+
+
+
+JavaScript has 8 Datatypes:
+
+String
+Number
+Bigint
+Boolean
+Undefined
+Null
+Symbol
+Object
+
+
+
+let x=12;
+console.log(typeof(x)) //Number
+
+let a="pranav"
+console.log(typeof(a))  //String
+
+let b=12334455566
+console.log(typeof(b))  //Bigint
+
+const ab=true
+console.log(typeof(ab))  //Boolean
+
+let a;
+console.log(a)  //result was Undefined we have initialized the variable a but not assigned value so it gives Undefined
+
+objects,arrays are non primitive datatypes
+
+JavaScript Objects:
+JavaScript objects are written with curly braces {}.
+
+Object properties are written as name:value pairs, separated by commas.
+
+Example
+const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+
+
+JavaScript Arrays
+JavaScript arrays are written with square brackets.
+
+Array items are separated by commas.
+
+The following code declares (creates) an array called cars, containing three items (car names):
+
+Example
+const cars = ["Saab", "Volvo", "BMW"];
+
+
+js is dynamically typed language and  interpeted language and uses jit (just in time) for improved performance(compile)
+
+
+conditional statements in Js:
+conditional statements are used to check the set of conditions whetherit is true or not
+
+there are three types of conditional statements:
+if,else,else-if
+
+syntax of if:
+if(condition){ //if the condition is true if block will be executed
+//stmts
+}
+else{
+//statements
+}
+
+syntax of if-else:
+if(condition){ //if the condition is true if block will be executed
+//stmts
+}
+else{other wise else block will be executed
+//statements
+}
+
+else -if:
+when we want to execute multiple statements we will use then else-if 
+
+ex:
+if(age>0){
+    console.log("kid")
+}
+else if (age<10){
+    console.log("children")
+}
+else if(age>=18){
+    console.log("not a kid")
+}
+else{
+    console.log("invalid age")
+}
+
+loops:
+loops are used to to perform certain action multiple or repeate times untill the given codnition is true
+there are five types of loops in js:
+
+1.for loop
+2.for in loop
+3.for of loop
+4.while loop
+5.do while loop
+
+
+for loop:
+syntax:
+
+for(initialization;condition;i++/i--){
+    //stmts
+}
+
+for...in Loop
+Usage: To iterate over the properties of an object.
+
+Syntax:
+
+javascript
+const object = {a: 1, b: 2, c: 3};
+for (let key in object) {
+    console.log(key + ': ' + object[key]);
+}
+Example:
+
+javascript
+const studentScores = {pranav: 98, praveen: 99, riyaz: 100, vamsi: 98};
+for (let name in studentScores) {
+    console.log(name + ': ' + studentScores[name]);
+}
+5. for...of Loop
+Usage: To iterate over iterable objects like arrays, strings, maps, sets, etc.
+
+Syntax:
+
+javascript
+const array = [1, 2, 3, 4, 5];
+for (let value of array) {
+    console.log(value);
+}
+Example:
+
+javascript
+const colors = ['red', 'green', 'blue'];
+for (let color of colors) {
+    console.log(color);
+}
+
+
+In JavaScript, break and continue are control statements that alter the flow of loops and switch statements.
+
+break Statement
+The break statement is used to exit a loop or a switch statement prematurely.
+
+Usage in a Loop:
+
+javascript
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        break; // Exit the loop when i is 5
+    }
+    console.log(i);
+}
+// Output: 0 1 2 3 4
+Usage in a Switch Statement:
+
+javascript
+let fruit = 'apple';
+switch (fruit) {
+    case 'apple':
+        console.log('This is an apple.');
+        break; // Exit the switch statement
+    case 'banana':
+        console.log('This is a banana.');
+        break;
+    default:
+        console.log('Unknown fruit.');
+}
+// Output: This is an apple.
+continue Statement
+The continue statement skips the rest of the current loop iteration and proceeds to the next iteration.
+
+Usage in a Loop:
+
+javascript
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        continue; // Skip the rest of the loop iteration when i is 5
+    }
+    console.log(i);
+}
+// Output: 0 1 2 3 4 6 7 8 9
+Key Differences:
+break: Exits the loop or switch statement entirely.
+
+continue: Skips to the next iteration of the loop without exiting it.

@@ -1,0 +1,57 @@
+// // varibales in JS
+
+// Variable is a container to store values. There are certain rules to declares variables in Js:
+//     1-> Always use alpabets,numbers,underscores,dollar signs as varible names
+//     2-> don't use numbers as starting it will give an error
+//     3-> Reserved words cannot be used as varibale names
+
+//     There are 3 ways to declare variables:
+//         1)var
+//         2)let
+//         3)const
+    
+//         var: It is a keyword while declaring variables and using of var variables we can reasssign and redeclares varibales
+                // It is a global scope 
+                // var a=90;
+                // console.log(a); //output: 90
+                // var a=89   //we can declare like var a=89 or a=89 this is called reassign and redeclare variables
+                // console.log(a); //output:89
+
+
+            // let: It is also keyword while declaring variables and using of let we cannot redeclare varibales 
+            // but we can reassign it and it is a block scoped
+            // // let a
+            // // console.lo
+            // // // let a=90 //we you do this gives an error as it is a block scoped we cannot redeclared it but we can reassig
+            // // a=90 //this will not give you an e
+            // // console.log(a)
+
+
+
+
+            // Hoisting is a JavaScript mechanism where variable and function declarations are moved to the 
+            // top of their containing scope during the compile phase. 
+            // This means that you can use variables and functions before they are declared in the code.
+
+
+             // console.log(a);   it will not give error but gives undefined as variable declaration  moved up but not value
+            // var a=10;
+             // console.log(a);
+
+
+
+            //  The Temporal Dead Zone (TDZ) refers to the period from the start of a block until a 
+            //  variable declared with let or const is initialized. 
+            //  During this time, accessing the variable will result in a ReferenceError.
+
+
+            // function example() {
+            //     console.log(a); // ReferenceError: Cannot access 'a' before initialization
+            //     let a = 5;
+            //     console.log(a); // Output: 5
+            // }
+            
+            // example();
+
+
+            // const varibale it was not constant cannot be redeclared and reassigned 
